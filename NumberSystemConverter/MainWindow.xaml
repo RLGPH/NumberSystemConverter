@@ -1,0 +1,40 @@
+﻿<Window x:Class="NumberSystemConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NumberSystemConverter"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black">
+        <TabControl>
+            <TabItem Header="NumberSystemConverter">
+                <Grid Background="Black" Margin="3,0,-3,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="37*"/>
+                        <RowDefinition Height="173*"/>
+                        <RowDefinition Height="196*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="121*"/>
+                        <ColumnDefinition Width="276*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="TB_Binary" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="" Margin="91,10,0,0" TextChanged="TB_Binary_TextChanged" Grid.Row="1" Width="120" Height="18"/>
+                    <TextBox x:Name="TB_Oktal" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" Text="" Margin="91,51,0,0" TextChanged="TB_Oktal_TextChanged" Grid.Row="1" Width="120" Height="18"/>
+                    <TextBox x:Name="TB_Decimal" HorizontalAlignment="Left" Margin="91,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TB_Decimal_TextChanged" Grid.Row="1" Height="20"/>
+                    <TextBox x:Name="TB_Hexa" HorizontalAlignment="Left" Margin="91,131,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Grid.Row="1" Height="20" TextChanged="TB_Hexa_TextChanged"/>
+                    <Label Content="Binær" HorizontalAlignment="Left" Margin="45,6,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="41"/>
+                    <Label Content="Oktal" HorizontalAlignment="Left" Margin="45,43,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="38"/>
+                    <Label Content="decimal" HorizontalAlignment="Left" Margin="35,87,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="51"/>
+                    <Label Content="Hexadecimal" HorizontalAlignment="Left" Margin="6,127,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" Height="26" Width="78"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="IP calculator">
+                <Grid Background="Black">
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
