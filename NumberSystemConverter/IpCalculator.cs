@@ -73,5 +73,12 @@ namespace NumberSystemConverter
             }
             return wildcardMask.ToString();
         }
+
+        public bool ActualIp(string IP,string sub)
+        {
+            
+            //remove later if not needed
+            return false;
+        }
     }
 }
