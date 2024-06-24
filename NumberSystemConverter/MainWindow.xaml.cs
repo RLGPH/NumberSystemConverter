@@ -142,8 +142,8 @@ namespace NumberSystemConverter
 
         private void BTN_Check_Sub_Ip_Click(object sender, RoutedEventArgs e)
         {
-            string Ip = TB_IP_1.Text + TB_IP_2.Text + TB_IP_3.Text + TB_IP_4.Text;
-            string subnet = TB_SUBNET_1.Text + TB_SUBNET_2.Text + TB_SUBNET_3.Text + TB_SUBNET_4.Text;
+            string Ip = TB_IP_1.Text +"."+ TB_IP_2.Text +"."+ TB_IP_3.Text +"."+ TB_IP_4.Text;
+            string subnet = TB_SUBNET_1.Text + "." + TB_SUBNET_2.Text + "." + TB_SUBNET_3.Text + "." + TB_SUBNET_4.Text;
             bool Iptruefalse = ipCalculator.ActualIp(Ip, subnet);
             if (Iptruefalse == true)
             {

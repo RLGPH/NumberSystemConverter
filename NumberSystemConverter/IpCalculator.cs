@@ -74,10 +74,39 @@ namespace NumberSystemConverter
             return wildcardMask.ToString();
         }
 
-        public bool ActualIp(string IP,string sub)
+        public bool ActualIp(string IP, string sub)
         {
-            
-            //remove later if not needed
+            string[] IpOctets = IP.Split('.');
+
+            int firstOctet;
+            if (int.TryParse(IpOctets[0], out firstOctet))
+            {
+                if (firstOctet >= 1 && firstOctet <= 126)
+                {
+                    if(sub == "255.0.0.0")
+                    {
+                        return true; // Class A
+                    }
+                }
+                else if (firstOctet >= 128 && firstOctet <= 191)
+                {
+                    if(sub == "255.255.0.0")
+                    {
+                        return true; // Class B
+                    }
+                }
+                else if (firstOctet >= 192 && firstOctet <= 223)
+                {
+                    if(sub == "255.255.255.0")
+                    {
+                        return true; // Class C
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
             return false;
         }
     }

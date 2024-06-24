@@ -74,8 +74,7 @@
                     <TextBox x:Name="TB_WildcardBinary_4" Grid.Column="4" HorizontalAlignment="Center" Margin="0,31,0,0" Grid.Row="3" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" KeyDown="TB_ConvertToDecimal_KeyDown"/>
                     <Button x:Name="BTN_Standard_Sub" Grid.Column="1" Content="Give standard subnet" HorizontalAlignment="Left" Margin="13,10,0,0" Grid.Row="4" VerticalAlignment="Top" Click="BTN_Standard_Sub_Click" Background="#FFDDDDDD" Foreground="Black" BorderBrush="#FF7C7C7C"/>
                     <Button x:Name="BTN_Check_Sub_Ip" Grid.Column="1" Content="Check subnet/Ip" HorizontalAlignment="Left" Margin="13,53,0,0" Grid.Row="4" VerticalAlignment="Top" Click="BTN_Check_Sub_Ip_Click"/>
-                    <TextBox Grid.ColumnSpan="2" TextWrapping="Wrap" Text="TextBox" Width="120"/>
-                    <TextBox x:Name="TB_IP_Resault" Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True" Background="Black" BorderBrush="White" Height="20"/>
+                    <TextBox x:Name="TB_IP_Resault" Grid.Column="2" HorizontalAlignment="Left" Margin="32,10,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230" Background="Black" BorderBrush="White" Height="20" IsReadOnly="True" Foreground="White" Grid.ColumnSpan="2"/>
                 </Grid>
             </TabItem>
         </TabControl>
